@@ -1,0 +1,135 @@
+body {
+    position: sticky;
+    background-image: url("top-view-burgers-and-fries-with-beer-and-copy-space.jpg");
+    background-repeat: no-repeat;
+    background-size: 1900px 1000px;
+    background-attachment: fixed;   /* manter a posição da imagem fixa independente da rolagem da pagina*/
+    display: block;
+}
+
+.menu {
+    margin-top: 6rem;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+#titulo {
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #fff;
+}
+
+.underline {
+    background-color: #000000;
+    max-width: 16rem;
+    max-height: 0.3rem;
+    margin-top: -1.3em;
+    margin-left: 30rem;
+}
+
+.underline2 {
+    background-color: #9496a5;
+    max-width: 12rem;
+    max-height: 0.3rem;
+    margin-top: -0.7em;
+    margin-left: 32rem;
+}
+
+.btn-menu {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.btn-filtro {
+    border: outset 4px #9496a5;
+    border-radius: 5px;
+    background-color: #050505;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    margin: 5px 3px;
+    cursor: pointer;
+}
+
+.cardapio {
+    width: 90rem;
+    margin: 0 auto;
+    max-width: 76rem;
+    display: grid;
+    gap: 3rem 2rem;
+    justify-items: center;
+
+}
+
+.cardapio-item {
+    display: grid;
+    gap: 1rem 2rem;
+    max-width: 25rem;
+}
+
+#img-menu {
+    border: solid 0.2rem #000000;
+    border-radius: 1rem;
+    max-width: 20rem;
+    margin-left: 4rem;
+}
+
+
+
+.valor-descrição header {
+    display: flex;
+    min-width: 20rem;
+    justify-content: space-between;
+    border-bottom: 2px dotted;
+    border-color: #717381;
+}
+
+#nome {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+#valor {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #02f816;
+    margin-bottom: 0.5rem;
+}
+
+#descrição {
+    color: #fff;
+    padding-top: 0.5rem;
+    margin-bottom: 0;
+    text-align: right;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media screen and (min-width: 768px) {
+    .cardapio-item {
+        grid-template-columns: 255px 1fr;
+        gap: 0 1.25rem;
+        max-width: 40rem;
+    }
+
+    #img-menu {
+        height: 175px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .cardapio {
+        width: 95rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #img-menu {
+        height: 180px;
+    }
+}
